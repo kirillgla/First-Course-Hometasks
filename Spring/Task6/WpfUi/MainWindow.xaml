@@ -1,0 +1,76 @@
+﻿<Window
+    x:Class="WpfUi.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WpfUi"
+    xmlns:math="clr-namespace:Math;assembly=Math"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="365"
+    Width="310"
+    MinHeight="100"
+    MinWidth="100"
+    Background="{StaticResource MainBackground}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <ComboBox
+            Name="FunctionSelectionBox"
+            Grid.ColumnSpan="4"
+            VerticalContentAlignment="Center"
+            Margin="5,5,5,5">
+            <ComboBox.ItemTemplate>
+                <DataTemplate DataType="math:CurveInfo">
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <Button
+            Grid.Column="4"
+            Grid.Row="0"
+            Name="MinusButton">
+            -
+        </Button>
+        
+        <Button
+            Grid.Column="5"
+            Grid.Row="0"
+            Name="PlusButton">
+            +
+        </Button>
+        
+        <Canvas
+            Grid.Column="0"
+            Grid.Row="1"
+            Grid.ColumnSpan="6"
+            Grid.RowSpan="6"
+            Name="Canvas"
+            Background="{StaticResource BaseBackground}"
+            Margin="5,0,5,5">
+            
+        </Canvas>
+        
+    </Grid>
+</Window>
