@@ -1,5 +1,5 @@
-Это репозиторий с домашними заданиями по программированию первого курса.
+This repository contains solutions for university programming hometasks.
 
-СПбГУ, Мат-мех, программная инженерия.
+St Petersburg University, Faculty of Mathematics and Mechanics, Software Engineering.
 
-Глазырин Кирилл
+Kirill Glazyrin
