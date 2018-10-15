@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeakHashTable", "WeakHashTable\WeakHashTable.csproj", "{7CD8F212-E832-4FBE-B030-7B0430C059E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeakHashTableTests", "WeakHashTableTests\WeakHashTableTests.csproj", "{C26E5ADD-0E22-4068-86FD-5E4528D1E2F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CD8F212-E832-4FBE-B030-7B0430C059E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD8F212-E832-4FBE-B030-7B0430C059E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD8F212-E832-4FBE-B030-7B0430C059E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD8F212-E832-4FBE-B030-7B0430C059E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26E5ADD-0E22-4068-86FD-5E4528D1E2F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C26E5ADD-0E22-4068-86FD-5E4528D1E2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C26E5ADD-0E22-4068-86FD-5E4528D1E2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C26E5ADD-0E22-4068-86FD-5E4528D1E2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
