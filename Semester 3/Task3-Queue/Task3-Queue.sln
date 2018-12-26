@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3-Queue", "Task3-Queue\Task3-Queue.csproj", "{3E111CA0-FCB0-4A96-838F-F0E8D8265DBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueDemo", "QueueDemo\QueueDemo.csproj", "{96DE0C46-F5A4-434C-9583-A8CB2E93E21A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E111CA0-FCB0-4A96-838F-F0E8D8265DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E111CA0-FCB0-4A96-838F-F0E8D8265DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E111CA0-FCB0-4A96-838F-F0E8D8265DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E111CA0-FCB0-4A96-838F-F0E8D8265DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96DE0C46-F5A4-434C-9583-A8CB2E93E21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96DE0C46-F5A4-434C-9583-A8CB2E93E21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96DE0C46-F5A4-434C-9583-A8CB2E93E21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96DE0C46-F5A4-434C-9583-A8CB2E93E21A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

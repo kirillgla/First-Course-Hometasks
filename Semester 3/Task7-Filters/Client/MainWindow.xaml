@@ -1,0 +1,98 @@
+﻿<Window
+    x:Class="Client.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="350"
+    Width="525"
+    ResizeMode="NoResize">
+    <Grid Margin="0,0,0,0">
+        <TextBlock
+            HorizontalAlignment="Left"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Margin="225,110,0,0"
+            Height="30" Width="270" Text="Path to source image:" />
+        <ListView
+            Margin="30,20,308.4,25.8"
+            Name="FiltersList"
+            SelectedItem="OnFilterSelected">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" />
+                </GridView>
+            </ListView.View>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <EventSetter
+                        Event="PreviewMouseLeftButtonUp"
+                        Handler="ListViewItemClicked" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+        <TextBox
+            Name="SourcePathTextBox"
+            HorizontalAlignment="Left"
+            Height="23"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="210"
+            Margin="225,145,0,0"
+            Text="D:\Downloads\big.bmp" />
+        <TextBlock
+            HorizontalAlignment="Left"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Margin="225,173,0,0"
+            Height="30"
+            Width="270"
+            Text="Path to destination image:" />
+        <TextBox
+            Name="DestinationPathTextBox"
+            HorizontalAlignment="Left"
+            Height="23"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="210"
+            Margin="225,208,0,0" Text="D:\Downloads\big1.bmp" />
+        <Button
+            IsEnabled="False"
+            Name="CancelButton"
+            Content="Cancel"
+            HorizontalAlignment="Left"
+            Height="30"
+            Margin="225,265,0,0"
+            VerticalAlignment="Top"
+            Width="125"
+            Click="OnCancelClicked" />
+        <TextBlock
+            Name="ProgressTextBlock"
+            HorizontalAlignment="Left"
+            TextWrapping="Wrap"
+            Text="Progress: 0%"
+            VerticalAlignment="Top"
+            Margin="225,20,0,0"
+            Height="35"
+            Width="270"
+            TextAlignment="Center"/>
+        <Button
+            Content="..."
+            HorizontalAlignment="Left"
+            Margin="441,145,0,0"
+            VerticalAlignment="Top"
+            Width="68"
+            Height="23"
+            Click="SelectSourceClicked"/>
+        <Button
+            Content="..."
+            HorizontalAlignment="Left"
+            Margin="440,208,0,0"
+            VerticalAlignment="Top"
+            Width="68"
+            Height="23"
+            Click="SelectDestinationClicked"/>
+    </Grid>
+</Window>
