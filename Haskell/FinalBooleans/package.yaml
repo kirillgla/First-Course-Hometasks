@@ -1,0 +1,51 @@
+name:                FinalParser
+version:             0.1.0.0
+github:              "kirillgla/FinalParser"
+license:             BSD3
+author:              "Kirill"
+maintainer:          "kirill_gla@mail.ru"
+copyright:           "Kirill Glazyrin"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Homework
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/kirillgla/FinalParser#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- parsec
+
+library:
+  source-dirs: src
+
+executables:
+  FinalParser-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - FinalParser
+
+tests:
+  FinalParser-test:
+    main:                Spec
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - FinalParser
+    - tasty-hunit
+    - tasty

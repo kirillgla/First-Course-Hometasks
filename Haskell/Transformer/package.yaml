@@ -1,0 +1,49 @@
+name:                Transformer
+version:             0.1.0.0
+github:              "kirillgla/Transformer"
+license:             BSD3
+author:              "Kirill"
+maintainer:          "kirill_gla@mail.ru"
+copyright:           "Kirill Glazyrin"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Homework
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/kirillgla/Transformer#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  Transformer-exe:
+    main:                Main
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - Transformer
+
+tests:
+  Transformer-test:
+    main:                Spec
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - Transformer
+    - tasty-hunit
+    - tasty
