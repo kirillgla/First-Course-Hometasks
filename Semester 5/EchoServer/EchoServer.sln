@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoServer", "EchoServer\EchoServer.csproj", "{DF685AA2-B32A-4159-9789-9C5B27279313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoClient", "EchoClient\EchoClient.csproj", "{5AD1D7AE-F650-4AA0-8B42-D914AC0872D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{F708E017-586B-4BBE-A34B-39EB33497A71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF685AA2-B32A-4159-9789-9C5B27279313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF685AA2-B32A-4159-9789-9C5B27279313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF685AA2-B32A-4159-9789-9C5B27279313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF685AA2-B32A-4159-9789-9C5B27279313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD1D7AE-F650-4AA0-8B42-D914AC0872D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD1D7AE-F650-4AA0-8B42-D914AC0872D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD1D7AE-F650-4AA0-8B42-D914AC0872D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD1D7AE-F650-4AA0-8B42-D914AC0872D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F708E017-586B-4BBE-A34B-39EB33497A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F708E017-586B-4BBE-A34B-39EB33497A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F708E017-586B-4BBE-A34B-39EB33497A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F708E017-586B-4BBE-A34B-39EB33497A71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
