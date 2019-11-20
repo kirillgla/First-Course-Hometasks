@@ -13,21 +13,11 @@ namespace EchoClient
 
         private static Socket ConnectSocket(string server, int port)
         {
-            var hostEntry = Dns.GetHostEntry(server);
-
-            // Loop through the AddressList to obtain the supported AddressFamily. This is to avoid
-            // an exception that occurs when the host IP Address is not compatible with the address family
-            // (typical in the IPv6 case).
-            foreach (var address in hostEntry.AddressList)
-            {
-                var ep = new IPEndPoint(address, port);
-                var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-                socket.Connect(ep);
-                if (!socket.Connected) continue;
-                return socket;
-            }
-
-            return null;
+            var ip = IPAddress.Parse(server);
+            var ep = new IPEndPoint(ip, port);
+            var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            socket.Connect(ep);
+            return socket;
         }
 
         private static void DoOnePing(Socket socket)
@@ -38,7 +28,6 @@ namespace EchoClient
             var buffer = new byte[BufferSize];
             int received = socket.Receive(buffer, buffer.Length, 0);
             Console.WriteLine($"Received a response: {Encoding.ASCII.GetString(buffer, 0, received)}");
-
         }
 
         public static void Main()
